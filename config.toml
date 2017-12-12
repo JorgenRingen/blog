@@ -1,0 +1,16 @@
+baseURL = "https://jorgenringen.github.io/"
+languageCode = "en-us"
+title = "JR"
+theme = "kiera"
+publishDir = "public"
+pygmentsCodeFences = "true"
+pygmentsStyle = "tango"
+
+[author]
+    name = "Jørgen Ringen"       #Author name
+    github = "JorgenRingen"     #Github username
+    gitlab = ""     #Gitlab username
+    linkedin = "jorgenringen"   #LinkedIn username
+    facebook = ""   #Facebook username
+    twitter = ""    #Twitter username
+    instagram = ""  #Instagram username

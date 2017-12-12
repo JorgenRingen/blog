@@ -1,0 +1,10 @@
+[submodule "public"]
+	path = public
+	url = git@github.com:JorgenRingen/JorgenRingen.github.io.git
+	branch = master
+[submodule "themes/ananke"]
+	path = themes/ananke
+	url = https://github.com/budparr/gohugo-theme-ananke.git
+[submodule "themes/kiera"]
+	path = themes/kiera
+	url = https://github.com/avianto/hugo-kiera.git
