@@ -1,6 +1,6 @@
 baseURL = "https://jorgenringen.github.io/"
 languageCode = "en-us"
-title = "JR"
+title = "👨‍💻"
 theme = "cocoa"
 publishDir = "public"
 pygmentsCodeFences = "true"
@@ -10,9 +10,8 @@ markdown = "cramdown"
 canonifyurls        = true
 contentdir          = "content"
 layoutdir           = "layouts"
-author              = "Jorgen Ringen"
 pygmentsuseclasses  = true
-disqusshortname     = "cocoaexamplesite"
+#disqusshortname     = "jrgnr"
 pluralizelisttitles = false
 # googleAnalytics     = "UA-123-45"
 
@@ -35,7 +34,7 @@ url                    = "/about/"
 name                   = "Code"
 weight                 = -100
 identifier             = "code"
-url                    = "/code/"
+url                    = "https://github.com/JorgenRingen"
 
 [params]
 latestpostscount       = 8                             # how many posts to display on the home page
@@ -44,7 +43,7 @@ author                 = "Jorgen Ringen"
 cachebuster            = true                          # add the current unix timestamp in query string for cache busting css assets
 dateform               = "Jan 2, 2006"
 dateformfull           = "Mon Jan 2 2006 15:04:05 MST"
-description            = "Don't panic"
+description            = "Nothin but code 👨‍💻"
 email                  = "jorgen.ringen@gmail.com"
 #extracssfiles          = [ "/css/override.css" ]       # In your `static` directory, add/remove files as necessary.
 faviconfile            = "img/leaf.ico"
@@ -54,7 +53,7 @@ github                 = "//github.com/JorgenRingen"
 lang                   = "en"
 linkedin               = "//linkedin.com/in/jorgenringen"
 noshowreadtime         = false                         # if true, don't show "<x> minutes read" in posts
-selfintro              = "Description"                            # appears in the site header when set to a non-empty string
+selfintro              = "Nothin but code 👨‍💻"                            # appears in the site header when set to a non-empty string
 twitter                = "//twitter.com/JorgenRingen"
 #mastodon               = "//example.com/@you"
 
@@ -74,5 +73,5 @@ piwik                  = false                         # If true, Piwik integrat
 #gitalk_owner           = "the owner of this repo"
 #gitalk_admin           = ['a', 'list', 'of', 'administrator']
 
-#avatar                 = "img/profile.png" # path to image in static dir e.g img/avatar.png (do not use in the same time as gravatar)
+avatar                 = "img/profile.png" # path to image in static dir e.g img/avatar.png (do not use in the same time as gravatar)
 # gravatar             = ""                # gravatar hash. see https://en.gravatar.com/site/implement/hash/. do not use in the same time as avatar

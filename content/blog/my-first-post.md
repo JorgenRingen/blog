@@ -34,6 +34,3 @@ class Test {
 {{< gist spf13 7896402 >}}
 
 ---
-
-{{ partial "disqus" . }}
-{{ partial "disqus-counter" . }}
