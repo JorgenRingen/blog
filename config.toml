@@ -1,6 +1,6 @@
 baseURL = "https://jorgenringen.github.io/"
 languageCode = "en-us"
-title = "👨‍💻"
+#title = "👨‍💻"
 theme = "cocoa"
 publishDir = "public"
 pygmentsCodeFences = "true"
@@ -13,7 +13,7 @@ layoutdir           = "layouts"
 pygmentsuseclasses  = true
 #disqusshortname     = "jrgnr"
 pluralizelisttitles = false
-# googleAnalytics     = "UA-123-45"
+googleAnalytics     = "UA-111173729-1"
 
 [permalinks]
 blog  = "blog/:slug/"
