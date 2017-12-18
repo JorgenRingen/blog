@@ -1,0 +1,52 @@
+baseURL: 'https://jorgenringen.github.io/'
+languageCode: en-us
+theme: cocoa
+publishDir: public
+pygmentsCodeFences: 'true'
+pygmentsStyle: tango
+markdown: cramdown
+canonifyurls: true
+contentdir: content
+layoutdir: layouts
+pygmentsuseclasses: true
+pluralizelisttitles: false
+googleAnalytics: UA-111173729-1
+disqusshortname: 'jrgnr'
+permalinks:
+  blog: '/:year/:month/:slug/'
+menu:
+  main:
+    - name: Blog
+      weight: -120
+      identifier: blog
+      url: /blog/
+    - name: About
+      weight: -110
+      identifier: about
+      url: /about/
+    - name: Code
+      weight: -100
+      identifier: code
+      url: 'https://github.com/JorgenRingen'
+params:
+  latestpostscount: 8
+  i18n_flags: false
+  author: Jorgen Ringen
+  cachebuster: true
+  dateform: 'Jan 2, 2006'
+  dateformfull: 'Mon Jan 2 2006 15:04:05 MST'
+  description: "Nothin but code \U0001F468‍\U0001F4BB"
+  email: jorgen.ringen@gmail.com
+  faviconfile: img/leaf.ico
+  github: //github.com/JorgenRingen
+  lang: en
+  linkedin: //linkedin.com/in/jorgenringen
+  noshowreadtime: false
+  selfintro: "Nothin but code \U0001F468‍\U0001F4BB"
+  twitter: //twitter.com/JorgenRingen
+  highlightjs: true
+  piwik: false
+  avatar: img/profile.png
+taxonomies:
+  tag: "tags"
+  category: "categories"

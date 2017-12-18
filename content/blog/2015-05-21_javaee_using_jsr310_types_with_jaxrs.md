@@ -1,6 +1,8 @@
 ---
-title: "JavaEE: Using JSR 310 in your DTO's with JAX-RS"
+author: "Jørgen Ringen"
+title: "JavaEE: Using JSR310 time-types in JAX-RS"
 date: 2015-05-21
+slug: javaee_jsr310_types_with_jaxrs
 ---
 
 With Java 8 came JSR310, a new and improved date and time API for Java.
@@ -89,4 +91,4 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapters;
 ```
 
-This solution should work across all Java EE servers regardless of JAX-RS implementation (jersey, resteasy, etc.
+This solution should work across all Java EE servers regardless of JAX-RS implementation (jersey, resteasy, etc).

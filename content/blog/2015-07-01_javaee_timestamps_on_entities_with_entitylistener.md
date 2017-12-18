@@ -1,6 +1,8 @@
 ---
+author: "Jørgen Ringen"
 title: "JavaEE: Timestamps on entities with entitylistener"
 date: 2015-07-01
+slug: javaee_timestamps_entities_entitylistener
 ---
 
 This post shows how you can add timestamps to your entities in a non-intrusive unified way with plain JPA.

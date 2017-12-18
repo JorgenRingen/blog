@@ -1,6 +1,8 @@
 ---
+author: "Jørgen Ringen"
 title: "Java8: Stream and Lambda code kata"
 date: 2015-06-04
+slug: java8_stream_lambda_code_kata
 ---
 
 I just added a code kata for learning the Stream and Lambda API's in Java 8.

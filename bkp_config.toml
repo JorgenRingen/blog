@@ -1,5 +1,3 @@
-baseURL = "https://jorgenringen.github.io/"
-languageCode = "en-us"
 #title = "👨‍💻"
 theme = "cocoa"
 publishDir = "public"
