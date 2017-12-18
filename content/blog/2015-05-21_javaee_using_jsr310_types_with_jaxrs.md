@@ -5,8 +5,8 @@ date: 2015-05-21
 slug: javaee_jsr310_types_with_jaxrs
 ---
 
-With Java 8 came JSR310, a new and improved date and time API for Java.
-This post will show you how you can use types from JSR310 directly in JAX-RS s by only leveraging the Java EE api.
+With Java 8 came the [JSR310 Date and Time API](https://jcp.org/en/jsr/detail?id=310), a new and improved date and time API for Java.
+This post will show you how you can use types from JSR310 directly in [JAX-RS](https://github.com/jax-rs) s by only leveraging the Java EE api.
 
 JavaEE dependency:
 ```xml
@@ -77,7 +77,7 @@ Now annotate the field with the adapter:
 private LocalDate birthDate;
 ```
 
-Instead of annotating the field we can declare the adapter in a package-info.java file together with our DTO's. This avoids cluttering of the java-code.
+Instead of annotating the field we can declare the adapter inside a package-info.java file together with our DTO's. This avoids cluttering of the java-code.
 
 ```
 @XmlJavaTypeAdapters({

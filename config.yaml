@@ -11,7 +11,7 @@ layoutdir: layouts
 pygmentsuseclasses: true
 pluralizelisttitles: false
 googleAnalytics: UA-111173729-1
-disqusshortname: 'jrgnr'
+disqusshortname: 'jorgenringen'
 permalinks:
   blog: '/:year/:month/:slug/'
 menu:
@@ -31,7 +31,7 @@ menu:
 params:
   latestpostscount: 8
   i18n_flags: false
-  author: Jorgen Ringen
+  author: Jørgen Ringen
   cachebuster: true
   dateform: 'Jan 2, 2006'
   dateformfull: 'Mon Jan 2 2006 15:04:05 MST'

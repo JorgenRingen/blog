@@ -5,7 +5,7 @@ date: 2015-07-01
 slug: javaee_timestamps_entities_entitylistener
 ---
 
-This post shows how you can add timestamps to your entities in a non-intrusive unified way with plain JPA.
+This post shows how you can add timestamps to your entities in a non-intrusive unified way with plain [JPA](https://docs.oracle.com/javaee/6/tutorial/doc/bnbpz.html).
 
 ---
 
@@ -87,7 +87,7 @@ As you can see, the entity needs three things to make it "timestampable":
 
 ---
 
-Our EntityListener class is just a simple java class with annotated methods declaring which events from the JPA runtime it should perform actions upon:
+Our [EntityListener](https://docs.jboss.org/hibernate/entitymanager/3.6/reference/en/html/listeners.html) class is just a simple java class with annotated methods declaring which events from the JPA runtime it should perform actions upon:
 
 ```
 public class TimeStampListener {
@@ -119,29 +119,32 @@ An EntityListener can easily be expanded with methods @PreRemove, @PostPersist, 
 
 Simple Test:
 ```java
-@Test
-public void testTimeStamp() throws InterruptedException {
-    // create
-    tx.begin();
-    Person person = new Person();
-    person.setName("Name1");
-    person = em.merge(person);
-    tx.commit();
+class TimestampListenerTest {
 
-    assertThat(person.getTimeStamp().getCreated(), not(nullValue()));
-    assertThat(person.getTimeStamp().getUpdated(), is(nullValue()));
-
-    Thread.sleep(5);
-
-    // update
-    tx.begin();
-    person = em.find(Person.class, person.getId());
-    person.setName("Name2");
-    tx.commit();
-
-    // verify timestamp
-    assertThat(person.getTimeStamp().getCreated(), not(nullValue()));
-    assertThat(person.getTimeStamp().getUpdated(), not(nullValue()));
-    assertThat(person.getTimeStamp().getUpdated(), after(person.getTimeStamp().getCreated()));
+    @Test
+    public void testTimeStamp() throws InterruptedException {
+        // create
+        tx.begin();
+        Person person = new Person();
+        person.setName("Name1");
+        person = em.merge(person);
+        tx.commit();
+    
+        assertThat(person.getTimeStamp().getCreated(), not(nullValue()));
+        assertThat(person.getTimeStamp().getUpdated(), is(nullValue()));
+    
+        Thread.sleep(5);
+    
+        // update
+        tx.begin();
+        person = em.find(Person.class, person.getId());
+        person.setName("Name2");
+        tx.commit();
+    
+        // verify timestamp
+        assertThat(person.getTimeStamp().getCreated(), not(nullValue()));
+        assertThat(person.getTimeStamp().getUpdated(), not(nullValue()));
+        assertThat(person.getTimeStamp().getUpdated(), after(person.getTimeStamp().getCreated()));
+    }
 }
 ```
