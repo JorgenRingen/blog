@@ -2,7 +2,7 @@
 author: "Jørgen Ringen"
 title: "Strategies for managing data in microservices"
 date: 2017-12-29
-slug: microservices_manage_data_strategies
+slug: stategies_managing_data_in_microservices
 ---
 
 # Strategies for managing data in microservices
