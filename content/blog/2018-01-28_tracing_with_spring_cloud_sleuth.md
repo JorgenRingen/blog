@@ -6,6 +6,7 @@ slug: tracing_with_spring_cloud_sleuth
 ---
 
 [Spring Cloud Sleuth](https://cloud.spring.io/spring-cloud-sleuth/) is a framework for enhancing logging and diagnostics, especially in a distributed microservice architecture. Sleuth makes it possible to correlate log-statements relating to a specific requests, scheduled jobs, etc within an application or even across multiple application.
+This is really useful when using a log-aggregation tool like [Splunk](https://www.splunk.com/) or the [ELK-stack](https://www.elastic.co/webinars/introduction-elk-stack)
 
 Terminology:
 
@@ -87,7 +88,8 @@ Output:
 Notice that the log-statements inside the span are assigned a unique span-id.
 
 ## Tracing across multiple applications
-Sleuth also provides tracing across multiple applications. By creating RestTemplate as a bean, sleuth will automatically add an interceptor to the RestTemplate. The interceptor will add tracing headers to outbound requests. Sleuth will automatically pick up the headers in the receiving application(s) and use the trace and span id’s for logging. This means that we get tracing across multiple applications out of the box. Sleuth also works with the new flux web client in Spring 5 and a lot of other libraries.
+Sleuth also provides tracing across multiple applications. By creating RestTemplate as a bean, sleuth will automatically add an interceptor to the RestTemplate. The interceptor will add tracing headers to outbound requests. Sleuth will automatically pick up the headers in the receiving application(s) and use the trace and span id’s for logging. This means that we get tracing across multiple applications out of the box. 
+Sleuth also works with a lot of other libraries like for example Hystrix, RxJava, Feigh, flux web client in Spring 5, Zuul, ++.
 
 ```java
 @Bean
